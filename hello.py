@@ -20,6 +20,15 @@ def menu(userOption):
     elif userOption == "2":
         substract(num1,num2)
 
+def crearPartido(listParam):
+    equipo1 = equipos[randint(0,3)]
+    equipo2 = equipos[randint(0,3)]
+
+    if equipo1 is equipo2:
+        equipo2 = "Belen"
+    print(f"Partido Creado: {equipo1} vs {equipo2}")
+    
+
 def main():
     global num1,num2
     num1 = input("Digite el primer numero  ")
